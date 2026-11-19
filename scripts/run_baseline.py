@@ -58,6 +58,7 @@ def main():
                 row = {"key": r["id"], "tag": r["tag"], "case": r["case_id"], "rep": r["repetition"],
                        "scorer": "Y" if r["report_pass"] else "N", "hand": labels.get(r["id"]), **j}
                 cache.put(row)
+            row["hand"] = labels.get(r["id"])   # always the current hand label, not the one saved at judging time
             rows.append(row)
             if i % 25 == 0:
                 print(f"  {framing}: {i}/{len(runs)}", flush=True)
