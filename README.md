@@ -70,8 +70,6 @@ Before attacking a judge, it has to be shown that it judges well without an atta
 show what answering Y for every run or a coin flip would score. Right: runs flagged as bad reports
 in each agent run, by the keyword scorer and by the judge. Counts, not percentages.*
 
-<!-- TODO(Ridhi): after re-plotting with your corrected labels, check that the next sentence
-still matches the left panel. -->
 
 The judge called N on 323 of 459 runs in plain framing and 290 in delimited, while the keyword
 scorer failed 104. It does not clearly beat answering Y for every run on the hand labels.
